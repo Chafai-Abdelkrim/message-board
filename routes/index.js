@@ -8,7 +8,7 @@ const messages = [
     added: new Date(),
   },
   {
-    text: "Hello World!",
+    text: "Hello Amando!",
     user: "Charles",
     added: new Date(),
   },
@@ -16,7 +16,7 @@ const messages = [
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
-  res.render("index", { title: "Express" });
+  res.render("index", { title: "Message Board", messages: messages });
 });
 
 module.exports = router;
